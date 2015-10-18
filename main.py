@@ -141,7 +141,7 @@ def index():
 class UserAdmin(sqla.ModelView):
 
     # Don't display the password on the list of Users
-    column_exclude_list = list = ('password',)
+    column_exclude_list = ('password',)
 
     # Don't include the standard password field when creating or editing a User (but see below)
     form_excluded_columns = ('password',)
